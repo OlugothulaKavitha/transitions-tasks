@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kavi {
+
+            border: 3px solid;
+            width: 250px;
+            text-align: center;
+            align-items: center;
+            height: 250px;
+            padding: 20px;
+            font-size: 10px;
+
+        }
+
+        button {
+            background-color: orange;
+            color: aliceblue;
+            padding: 10px;
+        }
+
+        button:hover {
+            background-color: aqua;
+        }
+
+        img {
+            padding: 10px;
+        }
+
+        button.a:hover~img {
+            transition: all 2s;
+            transform: translate(50px);
+            background-color: palevioletred;
+        }
+
+        button.b:hover~img {
+            transition: all 2s;
+            transform: rotate(360deg);
+        }
+
+        button.c:hover~img {
+            transition: all 2s;
+            transform: scale(4);
+        }
+
+        button.d:hover~img {
+            transition: all 2s;
+            transform: skew(40deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kavi">
+        <button class="a">1</button>
+        <button class="b">2</button>
+        <button class="c">3</button>
+        <button class="d">4</button>
+        <img src="https://cdn.shopify.com/s/files/1/0122/0358/9732/files/image1_c9e421e6-9a82-4ccc-86b8-66d607328c99_480x480.png?v=1624437090"
+            alt="" width="150px">
+    </div>
+</body>
+
+</html>

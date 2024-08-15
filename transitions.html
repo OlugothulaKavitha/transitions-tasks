@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.kavi {
+
+border: 3px solid;
+width: 270px;
+text-align: center;
+align-items: center;
+height: 270px;
+padding: 20px;
+font-size: 10px;
+background-color:palevioletred ;
+
+}
+
+button {
+background-color: orange;
+color: aliceblue;
+padding: 10px;
+}
+
+button:hover {
+background-color: green;
+}
+
+img {
+padding: 70px;
+}
+
+button.a:hover~img {
+transition: all 2s;
+transform: translate(50px);
+background-color: palevioletred;
+}
+
+button.b:hover~img {
+transition: all 2s;
+transform: rotate(360deg);
+}
+
+button.c:hover~img {
+transition: all 2s;
+transform: scale(4);
+}
+
+button.d:hover~img {
+transition: all 2s;
+transform: skew(40deg);
+}
+</style>
+</head>
+<body>
+<div class="kavi">
+<button class="a">Translate</button>
+<button class="b">Rotate</button>
+<button class="c">Scale</button>
+<button class="d">Skew</button>
+<img src="https://t4.ftcdn.net/jpg/05/26/29/97/360_F_526299769_kS4PKQw1F3y1jwqEyJBdzzPOcCn36VES.jpg"
+alt="" width="80px">
+</div>
+</html>
+ 
+    
